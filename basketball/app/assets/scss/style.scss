@@ -1,0 +1,213 @@
+@import '_normalize';
+@import '_variables';
+@import '_mixins';
+@import '_bem';
+
+html, body {
+	font-family: 'Roboto', sans-serif;
+	font-weight: normal;
+}
+
+.container {
+	max-width: 1140px;
+	margin: 0 auto;
+}
+
+.wrapper {
+	background: url('../img/background.png') no-repeat left top / cover;
+}
+.header {
+	&__wrapper {
+		position: relative;
+	}
+	&__row {
+		&:first-child {
+			padding: 18px 0;
+			background: linear-gradient(to right, #1c415b 0%, #1f3c55 25%, #3c2a41 50%, #492130 75%, #561829 100%);
+		}
+		&:last-child {
+			background-color: rgba(34, 34, 34, 0.7);
+			padding: 13px 0;
+		}
+		&-inner {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+	}
+	&__nav {
+	}
+	&__list {
+		list-style-type: none;
+		@include flex;
+	}
+	&__list-item {
+		@include flex;
+		position: relative;
+		&:not(:last-child) {
+			margin-right: 40px;
+			&:after {
+				@include pseudo {
+					width: 1px;
+					height: 41px;
+					background-color: rgba(0, 0, 0, 0.1);
+					position: absolute;
+					right: -20px;
+				}
+			}
+		}
+	}
+	&__list-item-link {
+		@include roboto-regular;
+		@include font-props(14px, 20px, #fff);
+		text-decoration: none;
+		transition: $slow;
+		&:hover {
+			color: $pink;
+		}
+		&.active-nav-link {
+			color: $pink;
+		}
+	}
+	&__burger-menu {
+		@include flex;
+		padding: 0 18px 0 20px;
+		position: relative;
+		& a {
+			margin-top: 6px;
+			@include roboto-regular;
+			@include font-props(12px, 20px, #fff);
+			text-decoration: none;
+			text-transform: uppercase;
+		}
+		&:before, &:after {
+			@include pseudo;
+			width: 1px;
+			height: 100%;
+			position: absolute;
+			background-color: rgba(0, 0, 0, 0.1);
+		}
+		&:before {
+			left: 0;
+		}
+		&:after {
+			right: 0;
+		}
+	}
+	&__btns {
+		@include flex;
+	}
+	&__btn {
+		&:not(:first-child) {
+			margin-left: 7px;
+		}
+	}
+	&__slider {
+		min-width: 50%;
+		max-width: 57.4%;
+	}
+}
+.page {
+	&__wrapper {
+		padding: 16px 0 53px 0;
+	}
+	&__row {
+		margin-top: 13px;
+		@include flex($align: flex-start);
+	}
+	&__column {
+		@include flex($direction: column);
+		&:first-child {
+			max-width: 750px;
+			width: 100%;
+		}
+	}
+	&__card-list {
+		@include flex($direction: column);
+		width: 100%;
+		list-style-type: none;
+	}
+	&__btn {
+		margin-top: 4px;
+		width: 100%;
+		height: 55px;
+		line-height: 24px;
+	}
+	&__form-block {
+		min-width: 360px;
+		height: 160px;
+	}
+	&__form {
+		margin-top: 20px;
+		@include flex($justify: flex-start);
+		width: 100%;
+		max-height: 41px;
+	}
+	&__articles {
+		margin-top: 6px;
+		max-width: 360px;
+	}
+	&__article {
+		width: 100%;
+		height: 124px;
+		&:not(:first-child) {
+			margin-top: 4px;
+		}
+	}
+	&__text {
+		@include flex($direction: column, $align: flex-start);
+		margin-top: 45px;
+		color: #fff;
+	}
+	&__title {
+		@include roboto-bold;	
+		@include font-props(18px, 26px);
+	}
+	&__description {
+		margin-top: 16px;
+	}
+	&__paragraph {
+		@include roboto-light;	
+		@include font-props(14px, 26px);
+		&:not(:first-child) {
+			margin-top: 16px;
+		}
+	}
+}
+.footer {
+	background-color: #0c364a;
+	&__wrapper {
+		padding: 37px 0;
+	}
+	&__row {
+		@include flex;
+	}
+	&__text {
+		@include roboto-light;	
+		@include font-props(13px, 22px, rgba(255, 255, 255, 0.7));
+	}
+	&__paragraph {
+	}
+	&__link {
+		& img {
+			width: 31px;
+			height: 31px;
+		}
+	}
+}
+
+#prev {
+	span {
+		transform: rotate(-90deg);
+	}
+}
+#next {
+	span {
+		transform: rotate(90deg);
+	}
+}
+
+/*
+	- подправить превью статей
+	- добавить date picker
+*/

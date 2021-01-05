@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	<title>Basketball</title>
+	<!-- <link rel="shortcut icon" href="assets/img/favicon.png" type="image/png"> -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/main.min.css">
+	<script defer src="assets/js/script.js"></script>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="wrapper__content">
+			<!-- header -->
+			<header class="header">
+				<div class="header__wrapper">
+					<div class="header__row row">
+						<div class="header__row-inner container">
+							<div class="header__image-block image-block logo">
+								<img src="assets/img/logo.png" alt="logo">
+							</div>
+							<nav class="header__nav">
+								<ul class="header__list">
+									<li class="header__list-item">
+										<a class="header__list-item-link" href="#">
+											Экспресс прогнозы           
+										</a>
+									</li>
+									<li class="header__list-item">
+										<a class="header__list-item-link active-nav-link" href="#">
+											ЧМ Австрии
+										</a>
+									</li>
+									<li class="header__list-item">
+										<a class="header__list-item-link" href="#">
+											ЧМ Польши
+										</a>
+									</li>
+									<li class="header__list-item">
+										<a class="header__list-item-link" href="#">
+											ЧМ России
+										</a>
+									</li>
+									<li class="header__list-item">
+										<a class="header__list-item-link" href="#">
+											ЧМ Украины
+										</a>
+									</li>
+									<li class="header__list-item">
+										<a class="header__list-item-link" href="#">
+											ЧМ Бразилии
+										</a>
+									</li>
+								</ul>
+							</nav>
+							<div class="header__burger-menu column">
+								<div class="header__burger burger">
+									<span></span>
+								</div>
+								<a href="#">еще</a>
+							</div>
+						</div>
+					</div>
+					<div class="header__row">
+						<div class="header__row-inner container">
+							<div class="header__btns">
+								<button class="header__btn btn pink-btn">
+									Сегодня
+								</button>
+								<button class="header__btn btn pink-btn">
+									Завтра
+								</button>
+								<button class="header__btn btn pink-btn">
+									date picker
+								</button>
+							</div>
+							<!-- slider -->
+							<div class="header__slider slider">
+								<div class="slider__contaner">
+									<div class="slider__wrapper">
+										<div class="slider__slide slide">
+											<img src="assets/img/icons/eurobasket.svg" alt="eurobasket">
+										</div>
+										<div class="slider__slide slide">
+											<img src="assets/img/icons/fiba-euro-cup.svg" alt="fiba-euro-cup">
+										</div>
+										<div class="slider__slide slide">
+											<img src="assets/img/icons/usa.svg" alt="usa">
+										</div>
+									</div>
+									<div class="slider__btns">
+										<button id="prev" class="slider__btn btn">
+											<span class="arrow"></span>
+										</button>
+										<button id="next" class="slider__btn btn">
+											<span class="arrow"></span>
+										</button></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</header>
+			<!-- page -->
+			<main class="page">
+				<div class="page__wrapper">
+					<div class="container">
+						<ul class="page__breadcrumbs breadcrumbs">
+							<li class="breadcrumb">
+								<a href="#">
+									Прогнозы на теннис
+								</a>
+							</li>
+							<li class="breadcrumb">
+								<a href="#">
+									Чемнионат мира
+								</a>
+							</li>
+						</ul>
+						<div class="page__row row">
+							<div class="page__column">
+								<ul class="page__card-list card-list">
+									<li class="card">
+										<div class="card__wrapper">
+											<div class="card__row">
+												<div class="card__image-block image-block">
+													<img src="assets/img/card-images/eurobasket.png" alt="eurobasket">
+												</div>
+												<div class="card__content">
+													<div class="card__content-inner">
+														<h4 class="card__title">
+															Аль-Ахли - Аль-Джаиш
+														</h4>
+														<div class="card__text desc-text">
+															<span class="card__date">10.01.2017</span>
+															<span class="card__time">17:15</span>
+															&nbsp;&nbsp;|&nbsp;&nbsp;
+															<span class="card__description">Чемпионат Катара. Мужчины.</span>
+														</div>
+														<div class="card__desc">
+															<h6 class="card__caption">
+																Аль-Джаиш лидер:
+															</h6>
+															<button class="btn blue-btn">1.5</button>
+														</div>
+													</div>
+												</div>
+												<div class="card__column">
+													<h6 class="card__caption">
+														Аль-Джаиш лидер:
+													</h6>
+													<button class="btn pink-btn">Выбрать!</button>
+												</div>
+											</div>
+										</div>	
+									</li>
+									<li class="card">
+										<div class="card__wrapper">
+											<div class="card__row">
+												<div class="card__image-block image-block">
+													<img src="assets/img/card-images/usa.png" alt="usa">
+												</div>
+												<div class="card__content">
+													<div class="card__content-inner">
+														<h4 class="card__title">
+															Барселона 2 - Кастелло
+														</h4>
+														<div class="card__text desc-text">   
+															<span class="card__date">10.01.2017</span>
+															<span class="card__time">02:35</span>
+															&nbsp;&nbsp;|&nbsp;&nbsp;
+															<span class="card__description">Чемпионат Испании. 2-й дивизион</span>
+														</div>
+														<div class="card__desc">
+															<h6 class="card__caption">
+																Выигрыш Кастелло:
+															</h6>
+															<button class="btn blue-btn">2.35</button>
+														</div>
+													</div>
+												</div>
+												<div class="card__column">
+													<h6 class="card__caption">
+														Выигрыш Кастелло
+													</h6>
+													<button class="btn pink-btn">Выбрать!</button>
+												</div>
+											</div>
+										</div>	
+									</li>
+								</ul>
+								<button class="page__btn btn pink-btn">
+									Показать еще ставки...
+								</button>
+							</div>
+							<div class="page__column">
+								<div class="page__form-block form-block">
+									<div class="page__form-block-text form-block__text">
+										<h2 class="page__form-block-title form-block__title">
+											Оформить подписку
+										</h2>
+										<h4 class="page__form-block-subtitle form-block__subtitle">
+											на бесплатные прогнозы
+										</h4>
+									</div>
+									<form class="page__form form">
+										<input class="page__form-input form__input" type="text" name="email" placeholder="Ваш e-mail..." />
+										<button class="page__form-btn form__btn btn pink-btn" type="submit">
+											ок
+										</button>
+									</form>
+								</div>
+								<div class="page__articles">
+									<article class="page__article article">
+										<a class="article__link" href="#">
+											<div class="article__row">
+												<div class="article__text">
+													<h5 class="article__title">
+														НБА. Одно очко Батлера, победы Оклахомы, Орлеана и Миннесоты
+													</h5>
+													<div class="article__desc desc-text">
+														<span class="article__date">7 января 2017</span>,&nbsp;
+														<span class="article__time">22:15. WTA</span>
+													</div>
+												</div>
+												<div class="article__preview image-block">
+													<img src="assets/img/article-images/1.jpeg" alt="preview">
+												</div>
+											</div>
+										</a>
+									</article>
+									<article class="page__article article">
+										<a class="article__link" href="#">
+											<div class="article__row">
+												<div class="article__text">
+													<h5 class="article__title">
+														Карри и Батлер - игроки недели в НБА
+													</h5>
+													<div class="article__desc desc-text">
+														<span class="article__date">7 января 2017</span>,&nbsp;
+														<span class="article__time">22:15. WTA</span>
+													</div>
+												</div>
+												<div class="article__preview image-block">
+													<img src="assets/img/article-images/2.jpeg" alt="preview">
+												</div>
+											</div>
+										</a>
+									</article>
+								</div>
+							</div>
+						</div>
+						<div class="page__text">
+							<h4 class="page__title">
+								Бесплатные прогнозы на баскетбол
+							</h4>
+							<div class="page__description">
+								<p class="page__paragraph">
+									Беттинг становится все более привлекательной сферой для постоянного или дополнительного заработка на территории России и стран СНГ. И это вполне естественно! Если 
+									человек отлично владеет темой и умеет предсказывать исход будущей игры в любом виде спорта исходя из опыта, а не эмоций, то из него выйдет отличный гандикаппер.
+								</p>
+								<p class="page__paragraph">
+									Баскетбол является одним из самых популярных командных видов спорта, так что многие игроки предпочитают делать ставки онлайн именно на игры НБА. Портал Kush v 
+									Sporte является сообществом для игроков и прогнозистов, где каждый может почитать платные и бесплатные прогнозы на баскетбол, написать свой аналитический материал 
+									и делиться выигрышными стратегиями ставок.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>	
+			</main>
+		</div>
+		<footer class="footer">
+			<div class="footer__wrapper">
+				<div class="container">
+					<div class="footer__row">
+						<div class="footer__text">
+							<p class="footer__paragraph">
+								© 2011-2016 «Всё про спорт.ру»
+							</p>
+							<p class="footer__paragraph">
+								Любое использование материалов приветствуется при гиперссылке
+							</p>
+						</div>
+						<a class="footer__link image-block" href="#" target="_blank">
+							<img src="assets/img/icons/arrow-link.svg" alt="link">
+						</a>
+					</div>
+				</div>
+			</div>
+		</footer>	
+	</div>
+</body>
+</html>
